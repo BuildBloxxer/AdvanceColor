@@ -1,33 +1,170 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Color picker</title>
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>
-    <div id="container">
-        <div id="palette" class="block">
-            <div id="color-palette"></div>
-            <div id="color-info">
-                <div class="title"> CSS Color </div>
-            </div>
-        </div>
-        <div id="picker" class="block">
-            <div class="ui-color-picker" data-topic="picker" data-mode="HSL"></div>
-            <div id="picker-samples" sample-id="master"></div>
-            <div id="controls">
-                <div id="delete">
-                    <div id="trash-can"></div>
-                </div>
-                <div id="void-sample" class="icon"></div>
-            </div>
-        </div>
-        <div id="canvas" data-tutorial="drop">
-            <div id="zindex" class="ui-input-slider" data-topic="z-index" data-info="z-index"
-                data-max="20" data-sensitivity="10"></div>
-        </div>
-    </div>
-  <script src="script.js"></script>
-  </body>
-</html>
+<html foxified=""><head><meta charset="utf-8">
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-34B604LFFQ&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://rules.quantcount.com/rules-p-31iz6hfFutd16.js" async=""></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=colorpicker.me&amp;callback=_gfp_s_&amp;client=ca-pub-8499472909581016"></script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NM805CH6F1&amp;l=dataLayer&amp;cx=c"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202305160101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-8499472909581016&amp;plah=colorpicker.me" id="google_shimpl"></script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],s=[],r=!0,a=function(e,i,n,o,s,r,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,c=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=s,this.deleteWhenComplete=r,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),c.isInitialized=!0,c.isComplete=!0,f("... func.apply: "+e);var i=c.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[c.funcName]),null!=n&&n.apply(null,this.parameters),!0===c.deleteWhenComplete&&delete t[e],!0===c.isBlock&&(f("----- F'D: "+c.name),u())}},l=function(e,i,t,n,o,s,r){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=s,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=r,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===s&&(t.defer=!0),t.onerror=function(){f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=r&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(s))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,r,a,c,h,f,u){var m=new l(e,i,n,r,a,c,h,u);!0===f?o[e]=m:s[e]=m,t[e]=m,d(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),s[e]=n,t[e]=n,d(n)},addFunc:function(e,n,r,l,c,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var y=new a(e,n,r,l,c,f,u,p);!0===m?o[e]=y:s[e]=y,t[e]=y,d(y)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),s[e]=o,t[e]=o,d(o)},items:t,processAll:u,setallowLoad:function(e){r=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer=""></script>
+
+<!-- Ezoic Code -->
+	<script>var ezoicId = 466688;</script>
+	
+<!-- Ezoic Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-41044131-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-41044131-2');
+</script>
+<script data-ad-client="ca-pub-8499472909581016" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
+		
+		<meta name="keywords" content="color, color code, color codes, color find, color finder, color pick, color picker, css, find, hexadecimal, hexadecimal color, hexadecimal color code, hexadecimal color codes, hexadecimal colors, hsb, hsv, hsl, html, pick, picker, rgb">
+		<meta name="description" content="An online color picker tool">
+
+		<title>Online Color Picker</title>
+
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="style.css">
+
+		<script src="jquery.js"></script><meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+		<script src="jquery-mousewheel.js"></script>
+		<script src="cookie.js"></script>
+		<script src="tinycolor.js"></script>
+		<script src="script.js"></script>
+	<link rel="canonical" href="https://colorpicker.me/">
+<script type="text/javascript">var ezouid = "1";</script><base href="https://colorpicker.me/"><script type="text/javascript">
+var ezoTemplate = 'old_site_noads';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script data-ezscrex="false" type="text/javascript">
+var soc_app_id = '0';
+var did = 466688;
+var ezdomain = 'colorpicker.me';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod58","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Dublin","country":"IE","days_since_last_visit":-1,"domain_id":466688,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"86fb6830-872a-4d70-6be4-c6ef1627f642","position_selection_id":0,"postal_code":"D07","pv_event_count":0,"response_size_orig":4964,"response_time_orig":9,"serverid":"i-0b39519198c919c46","state":"L","t_epoch":1684671081,"template_id":120,"time_on_site_visit":0,"url":"https://colorpicker.me/","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":162,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex="false" data-pagespeed-no-defer="" data-cfasync="false">
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_466688=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["86fb6830-872a-4d70-6be4-c6ef1627f642", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script type="text/javascript">var _audins_dom="colorpicker_me",_audins_did=466688;__ez.queue.addFile('/detroitchicago/cmbv2.js', '/detroitchicago/cmbv2.js?gcb=195-0&cb=04-3y02-8y06-13y07-2y1d-7y0b-6y0d-23y17-4y1b-5y20-4y25-3y33-4y5d-2&cmbcb=141&sj=x04x02x06x07x1dx0bx0dx17x1bx20x25x33x5d&abt=BidderTest', true, [], true, false, true, false);</script><script src="/detroitchicago/cmbv2.js?gcb=195-0&amp;cb=04-3y02-8y06-13y07-2y1d-7y0b-6y0d-23y17-4y1b-5y20-4y25-3y33-4y5d-2&amp;cmbcb=141&amp;sj=x04x02x06x07x1dx0bx0dx17x1bx20x25x33x5d&amp;abt=BidderTest" async=""></script>
+<script type="text/javascript" defer="">__ez.queue.addFile('/detroitchicago/cmbdv2.js', '/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-8y0c-6y1c-5&cmbcb=141&sj=x03x0cx1c&abt=BidderTest', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script><script src="/detroitchicago/cmbdv2.js?gcb=195-0&amp;cb=03-8y0c-6y1c-5&amp;cmbcb=141&amp;sj=x03x0cx1c&amp;abt=BidderTest" async=""></script><link rel="preload" href="https://adservice.google.ie/adsid/integrator.js?domain=colorpicker.me" as="script"><script type="text/javascript" src="https://adservice.google.ie/adsid/integrator.js?domain=colorpicker.me"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=colorpicker.me" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=colorpicker.me"></script><script type="text/javascript" src="https://s3.scriptcdn.net/cdn/c7fa7451-6f95-4815-ac32-b8cc2537837a" data-awssuidacr="4VLenoauXZ31ZAaz5H4oBhn3s5B4Su6k"></script><script type="text/javascript" async="" src="//www.pagespeed-mod.com/v1/taas?id=cs&amp;ak=32b001198a46647f164402ebaec7a88c&amp;si=d07acaa3a5ff4a4f99b12b98acafe347&amp;tag=1005&amp;rand=4VLenoauXZ31ZAaz5H4oBhn3s5B4Su6k&amp;ord=5786939948235084"></script><script src="https://www.googletagmanager.com/gtag/js?id=G-34B604LFFQ" async=""></script><meta http-equiv="origin-trial" content="A727AcAeLCei/ZogJHBlJUS63SxP6AeIROo7qXrkjrxkoxBu0eSSmypAHmGYwk4HjBMQp5nxCFODzfVnUIe31AQAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjg4MDgzMTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230517/r20190131/zrt_lookup.html" style="display: none;"></iframe>
+	<body style="background-color: rgb(161, 35, 167);">
+		<div id="container">
+			<div id="sv-map" style="background-color: rgb(243, 0, 255);"><div id="sv-reticule" style="left: 311.168px; bottom: 256.961px;"></div></div>
+			<div id="hue-map"><div id="hue-reticule" style="top: 69.697px;"></div></div>
+			<div id="color-settings-container">
+				<h1>Online Color Picker<span id="info"> <a href="javascript:void(0);" onclick="toInfo();" aria-label="Info">ⓘ</a></span></h1>
+				<input id="enter-color" autocomplete="off" placeholder="Enter a color">
+				<input id="random-color" type="button" value="Random" onclick="buttonClick(tinycolor.random());">
+				<table id="color-settings">
+					<tbody><tr><td><label for="red">Red</label></td><td><input class="modifiable" id="red"></td></tr>
+					<tr><td><label for="green">Green</label></td><td><input class="modifiable" id="green"></td></tr>
+					<tr><td><label for="blue">Blue</label></td><td><input class="modifiable" id="blue"></td></tr>
+					<tr><td><label for="hue">Hue</label></td><td><input class="modifiable" id="hue"></td></tr>
+					<tr><td><label for="saturation">Saturation</label></td><td><input class="modifiable" id="saturation"></td></tr>
+					<tr><td><label for="lightness">Lightness</label></td><td><input class="modifiable" id="lightness"></td></tr>
+					<tr><td><label for="value">Value</label></td><td><input class="modifiable" id="value"></td></tr>
+					<tr><td><label for="hexcode">Hex Code</label></td><td><input readonly="" id="hexcode"></td></tr>
+					<tr><td><label for="rgb">RGB</label></td><td><input readonly="" id="rgb"></td></tr>
+					<tr><td><label for="hsl">HSL</label></td><td><input readonly="" id="hsl"></td></tr>
+					<tr><td><label for="hsv">HSV</label></td><td><input readonly="" id="hsv"></td></tr>
+				</tbody></table>
+			</div>
+			<div id="color-schemes-container">
+				<h2><span class="large-only">Color Combos</span><span class="small-only">Color Combinations</span></h2>
+				<select>
+					<option value="complement">Complementary</option>
+					<option value="splitcomplement">Split Complementary</option>
+					<option value="triad">Triadic</option>
+					<option value="tetrad">Tetradic</option>
+					<option value="analogous">Analogous</option>
+					<option value="monochromatic">Monochromatic</option>
+				</select>
+				<ul id="color-schemes"><li><button style="background-color:#a123a7;color:#ffffff" onmouseup="buttonClick('a123a7');">#a123a7</button></li><li><button style="background-color:#29a723;color:#000000" onmouseup="buttonClick('29a723');">#29a723</button></li></ul>
+			</div>
+			<h2 id="saved-color-header">Saved Colors</h2>
+			<ul id="saved-colors">
+				<li class="option" id="clear"><button onclick="clearSavedColors();">Clear</button></li>
+				<li class="option" id="save"><button onclick="saveNewColor();" style="background-color: rgb(161, 35, 167); color: rgb(255, 255, 255);">Save</button></li><li class="saved-color"><button style="background-color:#a123a7;color:#ffffff" onclick="buttonClick('a123a7');">#a123a7</button></li>
+			</ul>
+		</div>
+		<div id="container-info">
+			<div id="x-button"><a href="javascript:void(0);" onclick="toColorPicker();" aria-label="Close" title="Close">❌</a></div>
+			<h1>About</h1>
+			<p>Colorpicker.me is an online color picker tool created by <a href="http://www.qvcool.com">Qvcool</a>.</p>
+			<h1>Tips</h1>
+			<ul>
+				<li>Link to specific colors directly by adding to the URL a pound sign ("#") followed by the color code in any format.
+				</li><li>Use the mouse wheel to input text field values while hovering over them or the hue while hovering over the saturation-value palette or hue slider.
+				</li><li>Store multiple colors at once by clicking the "Save" button in the lower left corner. These will remain saved until you click the "Clear" button next to it, even if you leave the page.
+				</li><li>After you find a fitting color, you can export it as a hexadecimal, RGB, HSV, or HSL color code.
+			</li></ul>
+			<h1>Feedback</h1>
+			<p>Found a problem? Have a recommendation? Email me at <a href="mailto:feedback@colorpicker.me">feedback@colorpicker.me</a>.</p>
+		</div>
+
+	
+
+<div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span id="ezoic-pub-ad-placeholder-100"></span><!-- ezoic_pub_ad_placeholder-100-bottom_floating-728x90-100-nonexxxnonexxxxxxezmaxscaleval100 --><!-- ezoic_pub_ad_placeholder-100-bottom_floating-970x90-100-nonexxxnonexxxxxxezmaxscaleval100 --></center></div><div id="ez-sidebar-wall-left" class="ez-sidebar-wall" style="left: 0px;">
+	<div class="ez-sidebar-wall-ad">
+		<span id="ezoic-pub-ad-placeholder-101"></span><!-- ezoic_pub_ad_placeholder-101-edge-160x600-101-nonexxxnonexxxxxxezmaxscaleval100 -->
+		<span class="ez-rail-close" id="ez-rail-close-left" style="top: 0; left: 0; display: none;" onclick="__ez_close_rail(this.parentElement.parentElement.id)">x</span>
+	</div>
+</div><div id="ez-sidebar-wall-right" class="ez-sidebar-wall" style="right: 0px;">
+	<div class="ez-sidebar-wall-ad">
+		<span id="ezoic-pub-ad-placeholder-102"></span><!-- ezoic_pub_ad_placeholder-102-edge_2-160x600-102-nonexxxnonexxxxxxezmaxscaleval100 -->
+		<span class="ez-rail-close" id="ez-rail-close-right" style="top: 0; right: 0; display: none;" onclick="__ez_close_rail(this.parentElement.parentElement.id)">x</span>
+	</div>
+</div><script async="" src="https://g.ezodn.com/cmp/v2/v.js?v=4"></script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8499472909581016&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1684200742&amp;plat=9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;plas=295x664_l%7C295x664_r&amp;format=0x0&amp;url=https%3A%2F%2Fcolorpicker.me%2F%23a123a7&amp;ea=0&amp;pra=5&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTEzLjAuNTY3Mi4xMjciLFtdLDAsbnVsbCwiNjQiLFtbIkdvb2dsZSBDaHJvbWUiLCIxMTMuMC41NjcyLjEyNyJdLFsiQ2hyb21pdW0iLCIxMTMuMC41NjcyLjEyNyJdLFsiTm90LUEuQnJhbmQiLCIyNC4wLjAuMCJdXSwwXQ..&amp;dt=1684671081539&amp;bpp=59&amp;bdt=296&amp;idt=537&amp;shv=r20230517&amp;mjsv=m202305160101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=986091273302&amp;frm=20&amp;pv=2&amp;ga_vid=22606644.1684671082&amp;ga_sid=1684671082&amp;ga_hid=1080819533&amp;ga_fc=1&amp;u_tz=60&amp;u_his=3&amp;u_h=772&amp;u_w=1372&amp;u_ah=738&amp;u_aw=1372&amp;u_cd=24&amp;u_sd=1.26&amp;dmc=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1525&amp;bih=741&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31071755%2C44788442%2C44790154%2C31061690&amp;oid=2&amp;pvsid=1514670112678625&amp;tmod=1644908792&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;ref=https%3A%2F%2Fwww.bing.com%2F&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1372%2C0%2C1372%2C738%2C1525%2C741&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=580" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><script>(function(){if(typeof document.body==='undefined'||document.body===null){return;}
+var attachEvent=function(element,evt,func){if(element.addEventListener){element.addEventListener(evt,func,false);}else{element.attachEvent("on"+evt,func);}};attachEvent(document.body,"ezVigImpression",function(e){if(typeof(_ezaq)!=="undefined"&&typeof e==="object"){__ez.pel.AddAndFire(e.slot,[(new __ezDotData(e.key,e.value))]);}});})();</script><script>window.__ez_vig_close_wrapper=function(closeFunc,urlAddition){closeFunc();var vc={"enabled":false,"useVignetteLoader":true,"fireEventName":"ezVigImpression","impressionSource":"siderail","urlAddition":"utm_content=sr-left","disableFloor":true,"eventHandlerTest":false};if(typeof urlAddition=='string'){vc.urlAddition=urlAddition;}
+var v=newEzVignette(vc);v.handleClick();};</script>
+<script type="text/javascript" style="display:none;" async="">
+</script>
+
+<script type="text/javascript" data-cfasync="false"></script><script>(() => {
+        window.addoncropExtensions = window.addoncropExtensions || [];
+        window.addoncropExtensions.push({
+            mode: 'emulator',
+            emulator: 'Foxified',
+            extension: {
+                id: 44,
+                name: 'YouTube Downloader by Addoncrop',
+                version: '17.2.8',
+                date: 'January 22, 2023',
+            },
+            flixmateConnected: true,
+        });
+    })();</script><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe><iframe src="about:blank" style="display: none;"></iframe></body></html>
