@@ -1,23 +1,27 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Stylish Color Picker</title>
+    <title>Color Picker JS</title>
 </head>
-<body class="red">
-    <div class="card">
-        <p>Pick a color</p>
-        <ul>
-            <li class="color-item" id="red"></li>
-            <li class="color-item" id="green"></li>
-            <li class="color-item" id="amber"></li>
-            <li class="color-item" id="blue"></li>
-            <li class="color-item" id="gray"></li>
-        </ul>
-    </div>
-    
+
+<body>
+
+    <p>A simple color picker that can be used with browsers that support <code>input[type=color]</code>.</p>
+    <p style="margin-bottom: 50px;">You can see the HEX code of picked color.</p>
+
+    <span class="color-picker">
+        <label for="colorPicker">
+            <input type="color" value="#1DB8CE" id="colorPicker">
+        </label>
+    </span>
+
+
+    <script src="./main.js"></script>
 </body>
+
+</html>
