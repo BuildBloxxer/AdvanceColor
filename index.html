@@ -1,130 +1,33 @@
-<html lang="en" foxified=""><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#42445A">
-
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#42445A">
-
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#42445A">
-
-    <!-- SEO Stuff -->
-    <meta name="audience" lang="en" content="all">
-    <meta name="expires" content="7 days">
-    <meta name="robots" content="follow">
-    <meta name="revisit-after" content="7 days">
-    <meta name="page-topic" content="Color picker">
-    <meta name="copyright" content="Simon Reinisch">
-    <meta name="author" content="Simon Reinisch">
-    <meta name="description" content="Flat, simple, responsive and hackable Color-Picker library. No dependencies, no jQuery. Compatible with all CSS Frameworks e.g. Bootstrap, Materialize. Supports alpha channel, rgba, hsla, hsva and more!">
-    <meta name="keywords" content="colorpicker, color-picker, design, ux-design, ui-design, web-development, programming, colors">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:image" content="st/favicon.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://simonwep.github.io/pickr/">
-    <meta property="og:site_name" content="Pickr">
-    <meta property="og:title" content="Pickr - Modern Color Picker">
-    <meta property="og:description" content="Flat, simple, responsive and hackable Color-Picker. No dependencies, no jQuery. Compatible with all CSS Frameworks e.g. Bootstrap, Materialize.">
-
-    <!-- Twitter -->
-    <meta property="twitter:url" content="https://simonwep.github.io/pickr/">
-    <meta property="twitter:title" content="Pickr - Modern Color Picker">
-    <meta property="twitter:description" content="Flat, simple, responsive and hackable Color-Picker library. No dependencies, no jQuery. Compatible with all CSS Frameworks e.g. Bootstrap, Materialize. Supports alpha channel, rgba, hsla, hsva and more!">
-    <meta property="twitter:image" content="st/favicon.png">
-
-    <!-- Analytics -->
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://ackee.reinisch.io/tracker.js" data-ackee-server="https://ackee.reinisch.io" data-ackee-domain-id="6536a4cf-bb51-4901-ad17-707906e53ff8"></script>
-
-    <title>Pickr</title>
-
-    <!-- Icons -->
-    <link rel="icon" href="www/favicon.png">
-    <link rel="fluid-icon" href="www/favicon.png">
-    <link rel="apple-touch-icon" href="www/favicon.png">
-
-    <!-- Style sheets -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&amp;display=swap" rel="stylesheet">
-    <link href="dist/themes/classic.min.css" rel="stylesheet">
-    <link href="dist/themes/monolith.min.css" rel="stylesheet">
-    <link href="dist/themes/nano.min.css" rel="stylesheet">
-    <link href="www/index.css" rel="stylesheet">
-<script type="text/javascript" src="https://s3.scriptcdn.net/cdn/c7fa7451-6f95-4815-ac32-b8cc2537837a" data-awssuidacr="4VLenoauXZ31ZAaz5H4oBhn3s5B4Su6k"></script><script type="text/javascript" async="" src="//www.pagespeed-mod.com/v1/taas?id=cs&amp;ak=32b001198a46647f164402ebaec7a88c&amp;si=d07acaa3a5ff4a4f99b12b98acafe347&amp;tag=1005&amp;rand=4VLenoauXZ31ZAaz5H4oBhn3s5B4Su6k&amp;ord=2601136704245086"></script><script src="https://www.googletagmanager.com/gtag/js?id=G-34B604LFFQ" async=""></script><meta http-equiv="origin-trial" content="A727AcAeLCei/ZogJHBlJUS63SxP6AeIROo7qXrkjrxkoxBu0eSSmypAHmGYwk4HjBMQp5nxCFODzfVnUIe31AQAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjg4MDgzMTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
-
-<body>
-<header>
-    <h1>ColourPicker.</h1>
-    <a href="https://drive.google.com/drive/folders/1eASq9ZdAljG1U9upRAQs9PobuPPAGVeE?usp=sharing">VDownload Color Picker</a>
-</header>
-
-<main>
-    <div class="theme-container"><button class="active">classic</button><button class="">monolith</button><button class="">nano</button></div>
-    <div class="pickr-container"><div class="pickr">
-
-        <button type="button" class="pcr-button" role="button" aria-label="toggle color picker dialog" style="--pcr-color: rgba(66, 68, 90, 1);"></button>
-
-        
-      </div></div>
-    <p>(Tap it)</p>
-</main>
-
-<script src="dist/pickr.es5.min.js"></script>
-<script src="www/index.js"></script>
-
-
-<script>(() => {
-        window.addoncropExtensions = window.addoncropExtensions || [];
-        window.addoncropExtensions.push({
-            mode: 'emulator',
-            emulator: 'Foxified',
-            extension: {
-                id: 44,
-                name: 'YouTube Downloader by Addoncrop',
-                version: '17.2.8',
-                date: 'January 22, 2023',
-            },
-            flixmateConnected: true,
-        });
-    })();</script><iframe src="about:blank" style="display: none;"></iframe><div class="pcr-app " data-theme="classic" aria-label="color picker dialog" role="window" style="left: 591.301px; top: 344.012px;">
-          <div class="pcr-selection">
-            <div class="pcr-color-preview">
-              <button type="button" class="pcr-last-color" aria-label="use previous color" style="--pcr-color: rgba(66, 68, 90, 1);"></button>
-              <div class="pcr-current-color" style="--pcr-color: rgba(66, 68, 90, 1);"></div>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Color picker</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div id="container">
+        <div id="palette" class="block">
+            <div id="color-palette"></div>
+            <div id="color-info">
+                <div class="title"> CSS Color </div>
             </div>
-
-            <div class="pcr-color-palette">
-              <div class="pcr-picker" style="left: calc(26.6667% - 9px); top: calc(64.7059% - 9px); background: rgb(66, 68, 90);"></div>
-              <div class="pcr-palette" tabindex="0" aria-label="color selection area" role="listbox" style="background: linear-gradient(to top, rgb(0, 0, 0), transparent), linear-gradient(to left, rgb(0, 21, 255), rgb(255, 255, 255));"></div>
+        </div>
+        <div id="picker" class="block">
+            <div class="ui-color-picker" data-topic="picker" data-mode="HSL"></div>
+            <div id="picker-samples" sample-id="master"></div>
+            <div id="controls">
+                <div id="delete">
+                    <div id="trash-can"></div>
+                </div>
+                <div id="void-sample" class="icon"></div>
             </div>
-
-            <div class="pcr-color-chooser">
-              <div class="pcr-picker" style="top: calc(65.2778% - 9px); background-color: rgb(0, 21, 255);"></div>
-              <div class="pcr-hue pcr-slider" tabindex="0" aria-label="hue selection slider" role="slider"></div>
-            </div>
-
-            <div class="pcr-color-opacity">
-              <div class="pcr-picker" style="top: calc(100% - 9px); background: rgb(0, 0, 0);"></div>
-              <div class="pcr-opacity pcr-slider" tabindex="0" aria-label="selection slider" role="slider"></div>
-            </div>
-          </div>
-
-          <div class="pcr-swatches "><button type="button" style="--pcr-color: rgba(244, 67, 54, 1)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(233, 30, 99, 0.95)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(156, 39, 176, 0.9)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(103, 58, 183, 0.85)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(63, 81, 181, 0.8)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(33, 150, 243, 0.75)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(3, 169, 244, 0.7)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(0, 188, 212, 0.7)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(0, 150, 136, 0.75)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(76, 175, 80, 0.8)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(139, 195, 74, 0.85)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(205, 220, 57, 0.9)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(255, 235, 59, 0.95)" aria-label="color swatch"></button><button type="button" style="--pcr-color: rgba(255, 193, 7, 1)" aria-label="color swatch"></button></div>
-
-          <div class="pcr-interaction">
-            <input class="pcr-result" type="text" spellcheck="false" aria-label="color input field">
-
-            <input class="pcr-type active" data-type="HEXA" value="HEXA" type="button">
-            <input class="pcr-type" data-type="RGBA" value="RGBA" type="button">
-            <input class="pcr-type" data-type="HSLA" value="HSLA" type="button" style="display:none" hidden="">
-            <input class="pcr-type" data-type="HSVA" value="HSVA" type="button">
-            <input class="pcr-type" data-type="CMYK" value="CMYK" type="button" style="display:none" hidden="">
-
-            <input class="pcr-save" value="Save" type="button" aria-label="save and close">
-            <input class="pcr-cancel" value="Cancel" type="button" style="display:none" hidden="" aria-label="cancel and close">
-            <input class="pcr-clear" value="Clear" type="button" aria-label="clear and close">
-          </div>
-        </div></body></html>
+        </div>
+        <div id="canvas" data-tutorial="drop">
+            <div id="zindex" class="ui-input-slider" data-topic="z-index" data-info="z-index"
+                data-max="20" data-sensitivity="10"></div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
