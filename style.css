@@ -1,91 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.4s;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 20px;
-    box-shadow: 0 30px 30px -15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-p {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-ul {
-    list-style: none;
-    padding: 24px;
+    padding: 30px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+    place-items: center;
 }
 
-ul li {
-    width: 24px;
-    height: 24px;    
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s;
+code {
+    padding: 5px 8px;
+    border-radius: 18px;
+    background: #f8f9f9;
+    color: #cc0066;
 }
 
-ul li:hover {
-    transform: scale(1.1);
+[type='color'] {
+    appearance: none;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border: none;
 }
 
-#red {
-    background-color: #ef5350;
-}
-#green {
-    background-color: #66bb6a;
-}
-#amber {
-    background-color: #ffca28;
-}
-#blue {
-    background-color: #42a5f5;
-}
-#gray {
-    background-color: #bdbdbd;
+[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
 }
 
-/* Color selected styles */
+[type='color']::-webkit-color-swatch {
+    border: none;
+}
 
-body.red {
-    background-color: #ef5350;
-    color:  #ef5350;
-}
-body.green {
-    background-color: #66bb6a;
-    color: #66bb6a;
-}
-body.amber {
-    background-color: #ffca28;
-    color: #ffca28;
-}
-body.blue {
-    background-color: #42a5f5;
-    color: #42a5f5;
-}
-body.gray {
-    background-color: #bdbdbd;
-    color: #bdbdbd;
+.color-picker {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f8f9f9;
 }
